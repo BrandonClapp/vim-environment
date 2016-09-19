@@ -37,16 +37,15 @@ Rebind Caps Lock key to Control when held, Escape when tapped.
 
 ```
 ; Author: fwompner gmail com
-InstallKeybdHook
+#InstallKeybdHook
 SetCapsLockState, alwaysoff
-apslock::
+Capslock::
 Send {LControl Down}
 KeyWait, CapsLock
-end {LControl p}
-if ( A_PriorKey = "CapsLock"  )
+Send {LControl Up}
+if ( A_PriorKey = "CapsLock" )
 {
     Send {Esc}
-
 }
 return
 ```
