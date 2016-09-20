@@ -22,29 +22,27 @@ ln -s ~/.vim/.vimrc ~/.vimrc
 - vim-colorschemes
 - vim-surround
 
-### Rebinding keys
+## Rebinding keys
 
 Caps Lock can be rebound to Left Control when held, Escape when tapped.
 
-#### Mac/Linux
+### Mac/Linux
 
 Karabiner/xcape can be used. [Follow instructions here](http://www.economyofeffort.com/2014/08/11/beyond-ctrl-remap-make-that-caps-lock-key-useful/)
 
-```
-brew cask install karabiner
-```
+*Bind Capslock to Control*
+
+![Bind capslock to control](./.readme/osx-map-capslock-to-control.png)
 
 **Karabiner**
 
-*Bind Capslock to Control in OSX*
-
-![Bind capslock to control](./.readme/osx-map-capslock-to-control.png)
+Install with `brew install karabiner`
 
 *Send `Escape` when `Control` is pressed*
 
 ![Bind control to escape](./.readme/osx-karabiner-map-control-to-escape.png)
 
-#### Windows
+### Windows
 
 Rebind Caps Lock key to Control when held, Escape when tapped.
 
