@@ -20,6 +20,7 @@ ln -s ~/.vim/.vimrc ~/.vimrc
 - syntastic
 - vim-airline
 - vim-colorschemes
+- vim-surround
 
 ### Rebinding keys
 
@@ -37,11 +38,11 @@ brew cask install karabiner
 
 *Bind Capslock to Control in OSX*
 
-![Bind capslock to control](./osx-map-capslock-to-control.png)
+![Bind capslock to control](./.readme/osx-map-capslock-to-control.png)
 
 *Send `Escape` when `Control` is pressed
 
-![Bind control to escape](./osx-karabiner-map-control-to-escape.png)
+![Bind control to escape](./.readme/osx-karabiner-map-control-to-escape.png)
 
 #### Windows
 
