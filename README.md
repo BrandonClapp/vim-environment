@@ -40,7 +40,7 @@ brew cask install karabiner
 
 ![Bind capslock to control](./.readme/osx-map-capslock-to-control.png)
 
-*Send `Escape` when `Control` is pressed
+*Send `Escape` when `Control` is pressed*
 
 ![Bind control to escape](./.readme/osx-karabiner-map-control-to-escape.png)
 
