@@ -1,4 +1,4 @@
-### Installation
+## Installation
 
 Repo contents go inside of `~/.vim/`. Pathogen packages are referenced as submodules.
 
@@ -6,14 +6,14 @@ Repo contents go inside of `~/.vim/`. Pathogen packages are referenced as submod
 git clone --recursive https://github.com/BrandonClapp/vim-environment ~/.vim/
 ```
 
-`~/.vimrc` is now located at `~/.vim/.vimrc` so a link is required.
+`~/.vimrc` is now located at `~/.vim/.vimrc` so a syslink is required.
 
 
 ```
 ln -s ~/.vim/.vimrc ~/.vimrc
 ```
 
-### Included plugins
+## Included plugins
 - auto-pairs
 - ctrlp
 - nerdtree
