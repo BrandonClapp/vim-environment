@@ -29,6 +29,20 @@ Caps Lock can be rebound to Left Control when held, Escape when tapped.
 
 Karabiner/xcape can be used. [Follow instructions here](http://www.economyofeffort.com/2014/08/11/beyond-ctrl-remap-make-that-caps-lock-key-useful/)
 
+```
+brew cask install karabiner
+```
+
+**Karabiner**
+
+*Bind Capslock to Control in OSX*
+
+(./osx-map-capslock-to-control.png)[./osx-map-capslock-to-control.png]
+
+*Send `Escape` when `Control` is pressed
+
+(./osx-karabiner-map-control-to-escape.png)[./osx-karabiner-map-control-to-escape.png]
+
 #### Windows
 
 Rebind Caps Lock key to Control when held, Escape when tapped.
