@@ -19,6 +19,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround
-[submodule "/home/brandon/.vim/bundle/omnisharp-vim"]
-	path = /home/brandon/.vim/bundle/omnisharp-vim
-	url = https://github.com/OmniSharp/omnisharp-vim
+[submodule "bundle/omnisharp-vim"]
+	path = bundle/omnisharp-vim
+	url = https://github.com/OmniSharp/omnisharp-vim 
