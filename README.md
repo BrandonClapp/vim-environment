@@ -21,6 +21,7 @@ ln -s ~/.vim/.vimrc ~/.vimrc
 - vim-airline
 - vim-colorschemes
 - vim-surround
+- omnisharp-vim
 
 ## Rebinding keys
 
