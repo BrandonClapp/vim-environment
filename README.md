@@ -63,3 +63,14 @@ if ( A_PriorKey = "CapsLock" )
 }
 return
 ```
+
+## OmniSharp
+
+OmniSharp needs to be compiled before use. After the environment has been cloned/pulled and `git submodule --init` and `git submodule --update` have been performed, use xuild/msbuild to build omnisharp.
+
+```bash
+cd omnisharp-vim
+git submodule update --init --recursive
+cd server
+xbuild
+```
