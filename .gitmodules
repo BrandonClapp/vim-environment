@@ -22,3 +22,12 @@
 [submodule "bundle/omnisharp-vim"]
 	path = bundle/omnisharp-vim
 	url = https://github.com/OmniSharp/omnisharp-vim 
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
+[submodule "bundle/vim-dispatch"]
+	path = bundle/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips

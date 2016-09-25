@@ -22,6 +22,9 @@ ln -s ~/.vim/.vimrc ~/.vimrc
 - vim-colorschemes
 - vim-surround
 - omnisharp-vim
+- vim-dispatch
+- YouCompleteMe
+- ultisnips
 
 ## Rebinding keys
 
@@ -66,11 +69,33 @@ return
 
 ## OmniSharp
 
-OmniSharp needs to be compiled before use. After the environment has been cloned/pulled and `git submodule --init` and `git submodule --update` have been performed, use xuild/msbuild to build omnisharp.
+Requirements:
+- Mono >3
+
+OmniSharp needs to be compiled before use. After the environment has been cloned/pulled and `git submodule update --init --recursive` has been performed, use xuild/msbuild to build the omnisharp server.
 
 ```bash
 cd omnisharp-vim
 git submodule update --init --recursive
 cd server
 xbuild
+```
+Change xbuild to msbuild if working on Windows.
+
+### Roslyn server (for asp.net core)
+
+Note: yet to get this working.
+
+Additionally, if using the `omnisharp-roslyn` (for asp.net core) server, it can be built and used instead (still requires mono for building)
+
+```bash
+cd ./.vim/bundles/omnisharp-vim/omnisharp-roslyn/
+./build.sh
+```
+
+Then adding the following to `.vimrc` to tell vim to tell `omnisharp-vim` to launch the roslyn server instead of the traditional one. (Already included in `.vimrc` in this repo)
+
+```bash
+let g:OmniSharp_server_type = 'v1'
+let g:OmniSharp_server_type = 'roslyn'
 ```
