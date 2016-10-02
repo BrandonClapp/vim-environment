@@ -2,15 +2,25 @@
 
 Repo contents go inside of `~/.vim/`. Pathogen packages are referenced as submodules.
 
+### Mac/Linux
 ```
 git clone --recursive https://github.com/BrandonClapp/vim-environment ~/.vim/
 ```
 
-`~/.vimrc` is now located at `~/.vim/.vimrc` so a syslink is required.
+`~/.vimrc` is now located at `~/.vim/.vimrc` so that it can be under source control. A syslink is required from `~` to `~/.vimrc`.
 
+### Windows
 
 ```
-ln -s ~/.vim/.vimrc ~/.vimrc
+git clone https://github.com/BrandonClapp/vim-environment C:\Users\YourUserName
+```
+
+Windows uses `vimfiles` to represent `.vim` and `_vimrc` to represent `.vimrc`, so two links are required.
+
+```
+cd C:\Users\YourUserName
+mklink /d vimfiles .vim
+mklink _vimrc .vim\.vimrc
 ```
 
 ## Included plugins
@@ -25,6 +35,7 @@ ln -s ~/.vim/.vimrc ~/.vimrc
 - vim-dispatch
 - YouCompleteMe
 - ultisnips
+- typescript-vim
 
 ## Rebinding keys
 
@@ -81,21 +92,3 @@ cd server
 xbuild
 ```
 Change xbuild to msbuild if working on Windows.
-
-### Roslyn server (for asp.net core)
-
-Note: yet to get this working.
-
-Additionally, if using the `omnisharp-roslyn` (for asp.net core) server, it can be built and used instead (still requires mono for building)
-
-```bash
-cd ./.vim/bundles/omnisharp-vim/omnisharp-roslyn/
-./build.sh
-```
-
-Then adding the following to `.vimrc` to tell vim to tell `omnisharp-vim` to launch the roslyn server instead of the traditional one. (Already included in `.vimrc` in this repo)
-
-```bash
-let g:OmniSharp_server_type = 'v1'
-let g:OmniSharp_server_type = 'roslyn'
-```
