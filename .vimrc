@@ -5,6 +5,7 @@ set relativenumber
 set number
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set colorcolumn=110
+set guifont=Monaco:h12
 
 colorscheme 0x7A69_dark
 
